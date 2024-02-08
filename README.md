@@ -14,14 +14,19 @@ This project is a backend for a travel agency. It is a RESTful API that allows u
 - Maven
 
 ## Running the Application
-To run the application, simply run the following command in the root directory of the project:
+To run the application, simply run the following commands:
 
-    docker-compose up
+    In the Flight_Database folder:
+        run ./mvnw package
+    In the Quarkus_Hotel_Project folder:
+        run ./mvnw package
+    In the root folder:
+        run docker-compose up
 
 This will start all the services required for the application to run.
 The application will be running on `localhost:8080`.
 The flight service will be running on `localhost:8081`.
-The hotel service will be running on `localhost:8082`.
+The hotel service will be running on `localhost:9000`.
 
 ## Endpoints
 ### Travel Agency
