@@ -13,7 +13,7 @@ services:
 
   my-app:
     build:
-      context: ./Mindera Agency/Mindera-Travel-Agency
+      context: ./Mindera-Travel-Agency
       dockerfile: Dockerfile
     container_name: travel-agency
     environment:
