@@ -37,12 +37,13 @@ services:
   mysql-db:
     image: mysql:8.0.36
     ports:
-      - "3306:3306"
+      - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: flights
     restart: on-failure
-  flight_app:
+
+  flight-app:
     build:
       context: ./Flight_Database
       dockerfile: Dockerfile
@@ -51,7 +52,7 @@ services:
       - QUARKUS_DATASOURCE_USERNAME=root
       - QUARKUS_DATASOURCE_PASSWORD=secret
     ports:
-      - "8081:8081"
+      - 8081:8081
     restart: on-failure
     depends_on:
       - mysql-db
