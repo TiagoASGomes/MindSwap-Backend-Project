@@ -57,5 +57,21 @@ services:
     depends_on:
       - mysql-db
 
+  hotel-app:
+    build:
+      context: ./Hotel_Database/src/main/docker
+      dockerfile: Dockerfile.jvm
+    environment:
+      - QUARKUS_DATASOURCE_JDBC_URL=jdbc:mysql://mongodb:3306/hotels
+    ports:
+      - 8082:8082
+    restart: on-failure
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+
 volumes:
   data:
