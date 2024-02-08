@@ -4,3 +4,6 @@
 [submodule "Flight_Database"]
 	path = Flight_Database
 	url = git@github.com:TiagoASGomes/Flight_Database.git
+[submodule "Quarkus_Hotel_Project"]
+	path = Quarkus_Hotel_Project
+	url = git@github.com:jgmsv/Quarkus_Hotel_Project.git
