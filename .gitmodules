@@ -1,0 +1,6 @@
+[submodule "Mindera-Travel-Agency"]
+	path = Mindera-Travel-Agency
+	url = git@github.com:TiagoASGomes/Mindera-Travel-Agency.git
+[submodule "Flight_Database"]
+	path = Flight_Database
+	url = git@github.com:TiagoASGomes/Flight_Database.git
