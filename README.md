@@ -16,9 +16,9 @@ This project is a backend for a travel agency. It is a RESTful API that allows u
 ## Running the Application
 To run the application, simply run the following commands:
 
-    1. Clone the repository;
-    2. run git submodule update --innit --recursive;
-    3. In the root folder:
+    1. Clone the repository with:
+        git clone --recurse-submodules https://github.com/TiagoASGomes/MindSwap-Backend-Project.git
+    2. In the root folder:
         run docker-compose up
 
 This will start all the services required for the application to run.
