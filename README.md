@@ -16,11 +16,9 @@ This project is a backend for a travel agency. It is a RESTful API that allows u
 ## Running the Application
 To run the application, simply run the following commands:
 
-    In the Flight_Database folder:
-        run ./mvnw package -DskipTests
-    In the Quarkus_Hotel_Project folder:
-        run ./mvnw package -DskipTests
-    In the root folder:
+    1. Clone the repository;
+    2. run git submodule update --innit --recursive;
+    3. In the root folder:
         run docker-compose up
 
 This will start all the services required for the application to run.
